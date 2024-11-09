@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shop - Home</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+/* Reset basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+html, body {
+    height: 100%; /* Ensures the body covers the full height */
+    font-family: Arial, sans-serif;
+    background-color:pink;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:gray;
+    padding: 20px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo h1 {
+    color: #FF0000;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 40px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: #87CEEB;
+}
+
+/* Hero Section styling */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #f8d7da;
+    height: calc(100vh - 60px); /* Full viewport height minus header */
+}
+
+.hero-text {
+    max-width: 50%;
+    padding-right: 20px;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    color:red-pink;
+    margin-bottom: 15px;
+}
+
+.hero-text h3 {
+    font-size: 50px;
+    color:#333 ;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.shop-btn {
+    background-color: #1e3a8a;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.shop-btn:hover {
+    background-color: #3b82f6;
+}
+
+/* Hero image styling */
+.hero-image img {
+    width: 450px;
+    height: auto;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+</style>
+
+
+
+
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Blooms<br>Heaven</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="orders.html">Orders</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Fresh Flowers</h1>
+            <h3>Natural & Beautiful Flowers</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore<br> magna aliqua erat, sed diam.</p>
+            <button class="shop-btn">Shop Now</button>
+        </div>
+        <div class="hero-image">
+            <img src="images/rtulips.jpg" alt="Bouquet of pink tulips">
+        </div>
+    </section>
+</body>
+</html>
+

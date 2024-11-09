@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shop - Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6e6;
+            margin: 0;
+        }
+		
+		.navbar {
+    background-color:gray;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar nav ul li {
+    margin: 0 15px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar nav ul li a:hover {
+    color: #d1e7dd;
+}
+        /* Page container */
+        .products-page {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+			
+        }
+        /* Page header */
+        .page-header {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .page-header h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        /* Product Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        /* Individual Product Card */
+        .product-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-card img {
+            width: 100%;
+            height: 250px;
+			object-fit:cover;
+			border-radius;8px;
+        }
+        .product-info {
+            padding: 15px;
+        }
+        .product-name {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0;
+        }
+        .product-price {
+            color: #4CAF50;
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .product-card button {
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .product-card button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+     <!--header section-->
+	 <header style="text-align:center;padding:10px;background-color:gray;font-size:20px">
+	 <h1>Products</h1>
+	 </header>
+	 
+	 	 <!-- Navigation Bar -->
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="orders.html">ORDERS</a></li>
+            </ul>
+        </nav>
+    </header>
+	     
+
+<div class="products-page">
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Our Flowers</h1>
+        <p>Discover our beautiful range of flowers and arrangements.</p>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="product-grid">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+            <img src="images/rose.jpg" alt="Red Roses">
+            <div class="product-info">
+                <div class="product-name">Red Roses</div>
+                <div class="product-price">$29.99</div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="product-card">
+            <img src="images/lilies.jpg" alt="White Lilies">
+            <div class="product-info">
+                <div class="product-name">White Lilies</div>
+                <div class="product-price">$34.99</div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="product-card">
+            <img src="images/tulips.jpg" alt="Tulips">
+            <div class="product-info">
+                <div class="product-name">White Tulips</div>
+                <div class="product-price">$24.99</div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+		
+		        <!-- Product Card 4 -->
+        <div class="product-card">
+            <img src="images/rtulips.jpg" alt="Rose tulips">
+            <div class="product-info">
+                <div class="product-name">Rose Tulips</div>
+                <div class="product-price">$24.99</div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+		
+		        <!-- Product Card 5 -->
+        <div class="product-card">
+            <img src="images/lavander.jpg" alt="Lavander">
+            <div class="product-info">
+                <div class="product-name">Lavender</div>
+                <div class="product-price">$24.99</div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+		
+		
+		        <!-- Product Card 6 -->
+        <div class="product-card">
+            <img src="images/wrose.jpg" alt="White rose">
+            <div class="product-info">
+                <div class="product-name">White Rose</div>
+                <div class="product-price">$24.99</div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+		
+		        <!-- Product Card 7 -->
+        <div class="product-card">
+            <img src="images/Orchids.jpg" alt="Orchids">
+            <div class="product-info">
+                <div class="product-name">Orchids</div>
+                <div class="product-price">$24.99</div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+		
+		        <!-- Product Card 8 -->
+        <div class="product-card">
+            <img src="images/peonies.jpg" alt="peonies">
+            <div class="product-info">
+                <div class="product-name">Peonies</div>
+                <div class="product-price">$24.99</div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+		
+		        <!-- Product Card 9 -->
+        <div class="product-card">
+            <img src="images/daisies.jpg" alt="daisies">
+            <div class="product-info">
+                <div class="product-name">Daisies</div>
+                <div class="product-price">$24.99</div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+		
+		        <!-- Product Card 10-->
+        <div class="product-card">
+            <img src="images/hydrangeas.jpg" alt="hydrangeas">
+            <div class="product-info">
+                <div class="product-name">Hydrangeas</div>
+                <div class="product-price">$24.99</div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Add more product cards as needed -->
+    </div>
+</div>
+
+</body>
+</html>
